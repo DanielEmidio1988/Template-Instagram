@@ -21,7 +21,6 @@ header{
     grid-template-rows: 1fr 1fr;
     justify-items:center;
     align-items: center;
-    /* background-color: orange; */
     height: 8vh;
     width: 100%;
     position: fixed;
