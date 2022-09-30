@@ -1,0 +1,86 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Logo versão Mobile */
+.logo-mobile{
+    display: none;
+}
+
+.logo-desktop{
+    border-bottom: 1px solid #DBDBDB;
+    display: grid;
+    grid-template-columns: 50vh 50vh 1fr;
+    justify-items:center;
+    align-items: center;
+    /* background-color: orange; */
+    height: 8vh;
+}
+
+.logo1{
+    display: grid;
+    align-items: center;
+}
+
+/* logo instagram versão Desktop */
+.logo1 img{
+    height: 5vh;
+}
+
+/* menu pesquisa versão Desktop */
+.logo-pesquisa input{
+    background-color: #EFEFEF;
+    color: #A0A0A0;
+    height: 4.8vh;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 39vh;
+    border-radius: 10px;
+    border: none;
+    padding-left: 35px;
+    font-size: 2vh;
+}
+
+.logo-button img{
+    margin-left: 20px;
+    height: 3.5vh;
+}
+
+.perfil{
+    border-radius: 50%;
+}
+
+main{
+    background-image: linear-gradient(90deg,#FFFFFF 0%, #FAFAFA 100%);
+}
+
+.container{
+    padding-top: 40px;
+    display: grid;
+    justify-items: center;
+}
+
+.box-galery{
+    display: grid;
+    grid-template-columns: 50vh 50vh 50vh;
+    grid-template-rows: 1fr 1fr;
+    /* background-color: blue; */
+    align-items: center;
+    gap: 40px;
+}
+
+.box-galery img{
+    height: 40vh;
+    width: 100%;
+}
+
+/* .box-galery ImagemMaior1{
+    grid-column: 2/span 2;
+    grid-row: 1/span 2;
+} */
+
+footer{
+    display: none;
+}
