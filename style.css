@@ -4,19 +4,29 @@
     box-sizing: border-box;
 }
 
+header{
+    background-color: white;
+    width: 100%;
+}
 /* Logo versão Mobile */
 .logo-mobile{
     display: none;
 }
 
 .logo-desktop{
+    background-color: white;
     border-bottom: 1px solid #DBDBDB;
     display: grid;
     grid-template-columns: 50vh 50vh 1fr;
+    grid-template-rows: 1fr 1fr;
     justify-items:center;
     align-items: center;
     /* background-color: orange; */
     height: 8vh;
+    width: 100%;
+    position: fixed;
+    top:0;
+
 }
 
 .logo1{
@@ -27,6 +37,10 @@
 /* logo instagram versão Desktop */
 .logo1 img{
     height: 5vh;
+}
+
+.logo1 img{
+    cursor: pointer;
 }
 
 /* menu pesquisa versão Desktop */
@@ -48,9 +62,28 @@
     height: 3.5vh;
 }
 
+.logo-button img:hover{
+    cursor: pointer;
+}
+
 .perfil{
     border-radius: 50%;
+    transition: transform .3s;
 }
+
+.perfil:hover{
+    transform: scale(1.6);
+}
+
+.icon{
+    transition: transform .3s;
+}
+
+.icon:hover{
+    transform: scale(1.6);
+}
+
+/* CORPO DA PÁGINA */
 
 main{
     background-image: linear-gradient(90deg,#FFFFFF 0%, #FAFAFA 100%);
@@ -74,13 +107,102 @@ main{
 .box-galery img{
     height: 40vh;
     width: 100%;
+    display: grid;
 }
 
-/* .box-galery ImagemMaior1{
+.box-galery img:hover{
+    cursor: pointer;
+    transform: scale(0.9);
+}
+
+#ImagemMaior1{
     grid-column: 2/span 2;
     grid-row: 1/span 2;
-} */
+    height: 100%;
+}
+
+#ImagemMaior2{
+    grid-column: 2/span 2;
+    grid-row: span 2;
+    height: 100%;
+}
 
 footer{
     display: none;
+}
+
+/* MODELO DA PÁGINA NA VERSÃO MOBILE */
+@media screen and (max-device-width: 800px) {
+
+    .logo-desktop{
+        display: none;
+    }
+
+    .logo-mobile{
+        display: grid;
+        background-color: white;
+        justify-items:center;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    .logo-mobile input {
+        height: 5vh;
+        width: 80%;
+        border: none;
+        background-color: #EFEFEF;
+        padding-left: 40px;
+        font-size: 2vh;
+        border-radius: 15px;
+    }
+
+    .container{
+        padding-top: 10px;
+        display: grid;
+        justify-items: center;
+        margin-bottom: 5px;
+    }
+
+    .box-galery{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: center;
+        gap: 3px;
+    }
+
+    .box-galery img{
+        height: 20vh;
+    }
+
+    footer{
+        border-top: 1px solid #DBDBDB;
+        display: grid;
+        background-color: white;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+
+    .menu-footer{
+
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        align-items: center;
+        justify-items: center;
+        padding-top: 2px;
+        border-bottom: 1px solid white;
+
+    }
+
+    .menu-footer img{
+        height: 5vh;
+        margin-right: 25px;
+    }
+
+    .perfil-mobile{
+        height: 5vh;
+        border-radius: 50%;
+    }
+
+    
 }
